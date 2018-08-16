@@ -11,31 +11,33 @@ class PostForm extends Component {
       body: ""
     };
 
-    this.onChange = this.onChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
+    this.onChange = this.onChange.bind(this); //this enables onChange to access 'this'
+    this.onSubmit = this.onSubmit.bind(this); //this enables onSubmit access to 'this'
   }
-  onChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
+  onChange = e => {
+    this.setState({ [e.target.name]: e.target.value }); //allows typing inside form, makes sure where clicking on form matches the names in the state
+  };
 
-  onSubmit(e) {
+
+  onSubmit = e => {
     e.preventDefault();
 
     const post = {
-      title: this.state.title,
+      title: this.state.title, //these are the items I want to submit
       body: this.state.body
     };
 
-    this.props.createPost(post);
-  }
+    this.props.createPost(post);  
+  };
 
   render() {
     return (
+      //form displayed
       <div>
         <h1>Add Post</h1>
         <form onSubmit={this.onSubmit}>
           <div>
-            <label>Title:</label>
+            <label>Title: </label>
             <input
               type="text"
               name="title"
@@ -44,7 +46,7 @@ class PostForm extends Component {
             />
           </div>
           <div>
-            <label>Body:</label>
+            <label>Body: </label>
             <br />
             <textarea
               name="body"
