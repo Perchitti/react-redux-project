@@ -33,10 +33,8 @@ export default class About extends Component {
               unplanned it really just happens.
             </p>
           </Col>
-          <Col xs={12} sm={3}>
-            <PostForm />
-          </Col>
           <Col cs={12} sm={9}>
+          <PostForm />
             <Posts />
           </Col>
         </Grid>
