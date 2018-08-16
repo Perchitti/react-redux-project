@@ -5,7 +5,7 @@ import { FETCH_POSTS, NEW_POST } from "./types";
 //think of dispatch as resolve or promise
 
 export const fetchPosts = () => dispatch => {
-  fetch("https://jsonplaceholder.typicode.com/posts")
+  fetch("http://localhost:3000/posts")
     .then(res => res.json())
     .then(posts =>
       dispatch({ //we are dispatching the data to the reducer, this calls on the reducer, it jumps to postReducer
