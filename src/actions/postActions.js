@@ -1,11 +1,12 @@
 import { FETCH_POSTS, NEW_POST } from "./types";
+import './db.json'
 
 //each action creater has to be exported
 //thunk middleware allows us to call disptach function directly  
 //think of dispatch as resolve or promise
 
 export const fetchPosts = () => dispatch => {
-  fetch("http://localhost:3000/posts")
+  fetch('./db.json')
     .then(res => res.json())
     .then(posts =>
       dispatch({ //we are dispatching the data to the reducer, this calls on the reducer, it jumps to postReducer
