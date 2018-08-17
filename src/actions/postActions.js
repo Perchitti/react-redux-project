@@ -5,7 +5,7 @@ import { FETCH_POSTS, NEW_POST } from "./types";
 //think of dispatch as resolve or promise
 
 export const fetchPosts = () => dispatch => {
-  fetch("https://localhost:3001/posts")
+  fetch("https://raw.githubusercontent.com/Perchitti/jsonPosts/master/db.json")
     .then(res => res.json())
     .then(posts =>
       dispatch({
