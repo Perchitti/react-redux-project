@@ -5,7 +5,7 @@ import { fetchPosts } from '../actions/postActions';
 
 class Posts extends Component {
 
-  componentWillMount = () => {
+  componentDidMount = () => {
     this.props.fetchPosts();
   }
   // when it mounts make request to API to fetch post
