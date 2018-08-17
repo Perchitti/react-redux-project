@@ -1,14 +1,16 @@
 # Project Title
 
-ProjectBox - Rails App with a jQuery Front End Portfolio Project
+This Site - *insert description about site*
 
 ## Getting Started
 
-ProjectBox is a storage site for artists to keep track of their equipment needed for projects in progress.
+Explain a quick run through of site
 
 ### Prerequisites
 
-Terminal must have NPM installed.
+Terminal must have NPM installed. 
+*(If you have Node.js, it comes with NPM)
+ - https://www.npmjs.com/get-npm
 
 ### ProjectBox Instructions
 
@@ -30,12 +32,16 @@ In your browser, go to https://localserver:3000
 * Redux
 
 * React-Router
+    - https://www.npmjs.com/package/react-router
 
 * React-Bootstrap
+    - https://react-bootstrap.github.io/
 
 * JSON-Server
+    - https://www.npmjs.com/package/json-server
 
 * Redux-Thunk
+    - https://www.npmjs.com/package/redux-thunk
 
 
 ## Versioning
