@@ -8,8 +8,8 @@ export default class Home extends Component {
     return (
       <Grid>
         <Jumbotron>
-          <h2>Welcome to ScoutMoney International</h2>
-          <p>Where it's a dog eat dog kind of world</p>
+          <h2>Welcome to quotes</h2>
+          <p>Where quotes are shared with others</p>
           <Link to="/about">
             <Button bsStyle="primary">About</Button>
           </Link>

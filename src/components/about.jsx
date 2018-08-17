@@ -15,7 +15,7 @@ export default class About extends Component {
               src="assets/codingcomputer.jpg"
               className="about-profile-pic"
             />
-            <h3>Goals After School</h3>
+            <h3>Fun Quotes</h3>
             <p>
               Don't fight it, use what happens. Now it's beginning to make a
               little sense. It's amazing what you can do with a little love in
@@ -34,7 +34,7 @@ export default class About extends Component {
             </p>
           </Col>
           <Col cs={12} sm={9}>
-          <PostForm />
+            <PostForm />
             <Posts />
           </Col>
         </Grid>
