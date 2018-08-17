@@ -31,6 +31,9 @@ In your browser, go to https://localserver:3000
 
 * Redux
 
+* React-Redux
+    - https://www.npmjs.com/package/react-redux
+
 * React-Router
     - https://www.npmjs.com/package/react-router
 
